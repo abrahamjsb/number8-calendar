@@ -1,0 +1,26 @@
+.form-container {
+
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.form-container .input-container {
+
+    margin: 10px;
+}
+
+.input-container label {
+
+    font-weight: bold;
+    padding-right: 5px;
+}
+
+.input-container input {
+
+    padding:10px;
+    border: solid 1px #e3e3e3;
+    
+}
