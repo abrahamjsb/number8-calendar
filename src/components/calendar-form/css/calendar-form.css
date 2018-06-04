@@ -24,3 +24,21 @@
     border: solid 1px #e3e3e3;
     
 }
+
+.input-container input.danger {
+
+    border: solid 1px #e43a3a;
+}
+
+.submit-btn {
+
+    background-color: #1d9e1d;
+    color: white;
+    font-weight: bolder;
+    font-size: 13px;
+    border-radius: 5px;
+}
+
+.submit-btn:focus {
+    outline: 0;
+}

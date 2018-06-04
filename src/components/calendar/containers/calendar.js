@@ -8,7 +8,7 @@ class Calendar extends Component {
     render() {
         return (
             <div className='calendar-container'>
-                <Month />
+                <Month />                                
             </div>
         )
     }
