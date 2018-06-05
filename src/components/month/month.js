@@ -1,4 +1,5 @@
 import React from 'react';
+import Week from '../week/week.js';
 import './month.css';
 
 const Month = () => (
@@ -17,33 +18,9 @@ const Month = () => (
             <div className='month-year'>Jun 2018</div>
         </div>        
         <div className='month-body'>
-            <div className='week'>
-                <div className='day gray'></div>
-                <div className='day gray'></div>
-                <div className='day gray'></div>
-                <div className='day gray'></div>
-                <div className='day gray'></div>                
-                <div className='day green'>1</div>
-                <div className='day weekend'>2</div>               
-            </div>
-            <div className='week'>
-                <div className='day weekend'>3</div>
-                <div className='day green'>4</div>
-                <div className='day green'>5</div>
-                <div className='day green'>6</div>
-                <div className='day green'>7</div>
-                <div className='day green'>8</div>                
-                <div className='day weekend'>9</div>                 
-            </div>
-            <div className='week'>
-                <div className='day weekend'>10</div>
-                <div className='day green'>11</div>
-                <div className='day green'>12</div>
-                <div className='day green'>13</div>
-                <div className='day gray'></div>
-                <div className='day gray'></div>                
-                <div className='day gray'></div>
-            </div>
+            <Week />
+            <Week />
+            <Week />            
         </div>
     </div>
 )

@@ -8,7 +8,7 @@ class App extends Component {
   state = {
     startAt: "",
     days: null,
-    countryCode: 'ES'
+    countryCode: ''
   }
 
   handleSubmit = (e) => {
@@ -25,8 +25,8 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Form {...this.state} handleSubmit={this.handleSubmit} />
-        <Calendar />
+        <Form  handleSubmit={this.handleSubmit} />
+        <Calendar hola="hola" {...this.state} />
       </div>
     );
   }
