@@ -13,8 +13,8 @@ class App extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
-    const formData = e.target;
-    const validate = validateForm(formData);
+    // const formData = e.target;
+    // const validate = validateForm(formData);
     // const newDate = setDateFormat(new Date(d), c);
     // this.setState({startAt:newDate, 
     //                days:parseInt(n, 10),
