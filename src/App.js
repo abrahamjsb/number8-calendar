@@ -6,9 +6,9 @@ import {setDateFormat, validateForm} from './components/calendar-form/form-helpe
 class App extends Component {
 
   state = {
-    startAt: "",
-    days: null,
-    countryCode: ''
+    startAt: new Date(),
+    days: 100,
+    countryCode: 'us'
   }
 
   handleSubmit = (e) => {
@@ -26,7 +26,7 @@ class App extends Component {
     return (
       <div>
         <Form  handleSubmit={this.handleSubmit} />
-        <Calendar hola="hola" {...this.state} />
+        <Calendar  {...this.state} />
       </div>
     );
   }

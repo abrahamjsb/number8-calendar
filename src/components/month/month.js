@@ -1,8 +1,9 @@
 import React from 'react';
+import {getMonthName} from '../calendar/calendar-helper';
 import Week from '../week/week.js';
 import './month.css';
 
-const Month = () => (
+const Month = (props) => (
 
     <div className='month-container'>
         <div className='month-header'>
@@ -15,7 +16,7 @@ const Month = () => (
                 <div className='day-legend'>F</div>
                 <div className='day-legend'>S</div>
             </div>
-            <div className='month-year'>Jun 2018</div>
+            <div className='month-year'>{getMonthName(props.monthId)}, {props.year}</div>
         </div>        
         <div className='month-body'>
             <Week />
