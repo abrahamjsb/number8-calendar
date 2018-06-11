@@ -6,7 +6,7 @@ import {setDateFormat, validateForm} from './components/calendar-form/form-helpe
 class App extends Component {
 
   state = {
-    startAt: new Date(),
+    startAt: '06/10/2018',
     days: 100,
     countryCode: 'us'
   }

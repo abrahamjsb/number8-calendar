@@ -7,8 +7,9 @@ class Calendar extends Component {
 
     render() {
 
-       const {startAt, days, countryCode} = this.props;  
-       const numMonths = calculateMonths(startAt, startAt, days);
+       const {startAt, days, countryCode} = this.props; 
+       const begin = new Date(startAt); 
+       const numMonths = calculateMonths(begin, begin, days);
 
         return (
             <div className='calendar-container'>  

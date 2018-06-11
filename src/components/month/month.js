@@ -1,8 +1,10 @@
 import React from 'react';
-import {getMonthName} from '../calendar/calendar-helper';
+import {getMonthName, calculateDays} from '../calendar/calendar-helper';
 import Week from '../week/week.js';
 import './month.css';
 
+const days = calculateDays(5, new Date('06/14/2018'), new Date('06/08/2018') );
+      console.log(days);
 const Month = (props) => (
 
     <div className='month-container'>
