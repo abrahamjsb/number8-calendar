@@ -1,12 +1,19 @@
-.month-container, .month-header, .month-body {
+.month-container, .month-header {
 
     display:flex;
     flex-direction: column;
 }
 
 .month-container {
-
+    width: 220px;
     margin: 10px;
+}
+
+.month-body {
+
+    display: flex;
+    flex-wrap: wrap;
+    width: 220px;
 }
 
 .month-year {
@@ -16,9 +23,10 @@
     font-weight: bolder;
     background-color: #b1b1b1;
     padding: 3px 0;
+    margin-right: 4px;
 }
 
-.week, .days {
+.days {
 
     display: flex;
     justify-content: space-between;
@@ -29,6 +37,7 @@
     font-size: 12px;
     font-weight: bolder;
     color: #535353;
+    margin-right: 4px;
 }
 
 .day, .day-legend {
@@ -49,6 +58,10 @@
 .day.gray {
 
     background-color: #e3e3e3;
+}
+.day.gray:after {
+
+    content: " ";
 }
 
 .day.green {

@@ -52,12 +52,13 @@ export const calculateMonths = (p,d,n,m) => {
 
 // calculate days of months
 export const calculateDays = (id, end, start) => {
-          
-    const finalValidDate = end; console.log("finalValidDate "+ finalValidDate)
-    const year = finalValidDate.getFullYear(); console.log("year"+ year)
-    const startValidDate = monthComparator(end, start) ? start : new Date(year, id, 1); console.log("startValidDate "+ startValidDate)
-    const finalWeek = getFinalWeek(finalValidDate); console.log("finalWeek "+ finalWeek)
-    let currentDate = getBeginWeek(startValidDate); console.log("currentDate "+ currentDate)
+
+    const finalValidDate = end; 
+    const year = finalValidDate.getFullYear();
+    const startValidDate = monthComparator(end, start) ? start : new Date(year, id, 1); 
+    console.log(startValidDate);
+    const finalWeek = getFinalWeek(finalValidDate); 
+    let currentDate = getBeginWeek(startValidDate); 
     const days = [];
     let cont = 1;
     while(!dateComparator(currentDate,finalWeek)) {
