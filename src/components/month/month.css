@@ -1,0 +1,77 @@
+.month-container, .month-header {
+
+    display:flex;
+    flex-direction: column;
+}
+
+.month-container {
+    width: 220px;
+    margin: 10px;
+}
+
+.month-body {
+
+    display: flex;
+    flex-wrap: wrap;
+    width: 220px;
+}
+
+.month-year {
+
+    text-align: center;
+    font-size: 12px;
+    font-weight: bolder;
+    background-color: #b1b1b1;
+    padding: 3px 0;
+    margin-right: 4px;
+}
+
+.days {
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.days {
+
+    font-size: 12px;
+    font-weight: bolder;
+    color: #535353;
+    margin-right: 4px;
+}
+
+.day, .day-legend {
+
+    width: 30px;
+    height: 30px;
+    margin-right: 1px;
+    margin-top: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.day {
+    font-size: 13px;
+}
+
+.day.gray {
+
+    background-color: #e3e3e3;
+}
+.day.gray:after {
+
+    content: " ";
+}
+
+.day.green {
+
+    background-color: #1d9e1d;
+}
+
+.day.weekend {
+
+    background-color: #eeee52;
+}
+
+

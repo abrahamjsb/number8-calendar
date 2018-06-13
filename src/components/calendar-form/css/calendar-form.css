@@ -1,0 +1,44 @@
+.form-container {
+
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.form-container .input-container {
+
+    margin: 10px;
+}
+
+.input-container label {
+
+    font-weight: bold;
+    padding-right: 5px;
+}
+
+.input-container input {
+
+    padding:10px;
+    border: solid 1px #e3e3e3;
+    
+}
+
+.input-container input.danger {
+
+    border: solid 1px #e43a3a;
+}
+
+.submit-btn {
+
+    background-color: #1d9e1d;
+    color: white;
+    font-weight: bolder;
+    font-size: 13px;
+    border-radius: 5px;
+}
+
+.submit-btn:focus {
+    outline: 0;
+}
